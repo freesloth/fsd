@@ -1,0 +1,15 @@
+sudo: required
+language: python
+  - "3.6.4"
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install python3
+  - wget https://bootstrap.pypa.io/get-pip.py
+  - sudo python3 get-pip.py
+install:
+  - python3 -V
+  - pip -V
+  - sudo python3 -m pip install nose
+  - sudo python3 -m pip install -r requirements.txt
+script:
+  - make test

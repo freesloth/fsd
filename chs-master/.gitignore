@@ -1,0 +1,9 @@
+# Build files
+dist/
+build/
+*.spec
+*.egg-info
+
+# Others
+__pycache__
+.DS_Store
